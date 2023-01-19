@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { BACKEND_URL } from "./constants";
 
 export const SightingList = () => {
-  const BACKEND_URL = "http://localhost:3000";
   const [sightings, setSightings] = useState();
 
   useEffect(() => {

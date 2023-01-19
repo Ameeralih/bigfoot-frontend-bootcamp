@@ -3,9 +3,9 @@ import axios from "axios";
 import "./App.css";
 import App from "./App";
 import { useParams } from "react-router-dom";
+import { BACKEND_URL } from "./constants";
 
 export const Sighting = () => {
-  const BACKEND_URL = "http://localhost:3000";
   const [sighting, setSighting] = useState();
   const [sightingIndex, setSightingIndex] = useState();
 
